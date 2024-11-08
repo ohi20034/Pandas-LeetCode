@@ -1,6 +1,6 @@
 import pandas as pd
 
-def getDataframeSize(players: pd.DataFrame):
+def getDataframeSize(players):
     row,column = players.shape
     return [row,column]
 
@@ -22,3 +22,5 @@ columns = ['player_id', 'name', 'age', 'position', 'team']
 df = pd.DataFrame(data, columns=columns)
 
 print(getDataframeSize(df))
+
+print(df[0:2])
